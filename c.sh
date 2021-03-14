@@ -444,7 +444,7 @@ if [[ "${ID}" == "centos" ]];then
 
 else
 
-	${INS} install php7.0-cgi php7.0-fpm php7.0-curl php7.0-gd php7.0-mbstring php7.0-xml php7.0-sqlite3 sqlite3 -y
+	${INS} apt -y install php7.0-cgi php7.0-fpm php7.0-curl php7.0-gd php7.0-mbstring php7.0-xml php7.0-sqlite3 sqlite3 -y
 	judge "php+sqlite3 安装"
 
 	setphp="/run/php/php7.0-fpm.sock"
